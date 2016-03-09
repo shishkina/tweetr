@@ -1,0 +1,13 @@
+<h1><%=@tweed.title%></h1>
+
+<p>
+  <%=@tweed.body%>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_tweed_path(@tweed)%>
+</p>
+
+<p>
+  <%= link_to "Delete", tweed_path(@tweed), data: {confirm: "Are you sure you want to delete this article?"}, method: :delete%>
+</p>

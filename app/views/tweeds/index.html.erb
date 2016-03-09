@@ -1,0 +1,11 @@
+<h1>All Tweeds</h1>
+
+<ul id="tweeds">
+  <% @tweeds.each do |tweed|%>
+  <li>
+    <%= link_to tweed.title, tweed_path(tweed), class: 'tweed_title', id:"tweed_#{tweed.id}"%>
+  </li>
+  <%end%>
+</ul>
+
+<%= link_to "Create New Tweed", new_tweed_path, class: "new_tweed"%>
